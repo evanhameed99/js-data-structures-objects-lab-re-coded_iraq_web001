@@ -14,3 +14,11 @@ function updateDriverWithKeyAndValue(obj,key,value){
 
   return obj;
 }
+
+function deleteFromDriverByKey(obj,key){
+  let newDriver = {...obj};
+
+  delete newDriver[key];
+
+  return newDriver;
+}
